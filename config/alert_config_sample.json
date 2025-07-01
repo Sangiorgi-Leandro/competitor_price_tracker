@@ -1,0 +1,19 @@
+{
+  "email": {
+    "enabled": false,
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender_email": "tuo@email.com",
+    "sender_password": "la_tua_password",
+    "recipient_email": "destinatario@email.com"
+  },
+  "thresholds": {
+    "percentage_drop": 5.0,
+    "absolute_drop": 20.0
+  },
+  "target_prices": {
+    "Amazon.it": 450.0,
+    "Phoneclick.it": 460.0,
+    "Teknozone.it": 470.0
+  }
+}

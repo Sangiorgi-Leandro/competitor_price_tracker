@@ -1,0 +1,11 @@
+# Ignora dati sensibili e file temporanei
+__pycache__/
+*.pyc
+
+# File di output
+data/
+config/alert_config.json  # file reale con credenziali
+
+# Ambiente virtuale (se usato)
+venv/
+.env
