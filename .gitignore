@@ -1,11 +1,23 @@
-# Ignora dati sensibili e file temporanei
+# Bytecode Python e cache
 __pycache__/
-*.pyc
+*.py[cod]
 
-# File di output
-data/
-config/alert_config.json  # file reale con credenziali
-
-# Ambiente virtuale (se usato)
+# File di ambiente virtuale
 venv/
+seventeen/
 .env
+.env.*
+
+# Dati temporanei/log
+*.log
+data/*.json
+data/*.csv
+
+# Config privata (e-mail, credenziali)
+config/alert_config.json
+
+# File OS specifici
+.DS_Store
+*.swp
+
+.directory
