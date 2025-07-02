@@ -1,0 +1,82 @@
+{
+  "product": {
+    "name": "Samsung Galaxy S23 256GB",
+    "description": "Smartphone Samsung Galaxy S23 con 256GB di storage"
+  },
+  "sites": {
+    "amazon": {
+      "name": "Amazon.it",
+      "url": "https://www.amazon.it/dp/B0BW67RR1T",
+      "selectors": {
+        "title": "#productTitle",
+        "price": ".a-price-whole"
+      },
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "it-IT,it;q=0.9,en;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "DNT": "1",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1"
+      },
+      "enabled": true
+    },
+    "phoneclick": {
+      "name": "Phoneclick.it",
+      "url": "https://phoneclick.it/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa",
+      "selectors": {
+        "title": "h1.product-title",
+        "price": ".price-current"
+      },
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+        "Accept-Language": "it-IT,it;q=0.9,en;q=0.8",
+        "Referer": "https://phoneclick.it/",
+        "DNT": "1"
+      },
+      "enabled": true
+    },
+    "teknozone": {
+      "name": "Teknozone.it",
+      "url": "https://teknozone.it/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa",
+      "selectors": {
+        "title": ".product-name h1",
+        "price": ".price-new"
+      },
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "it-IT,it;q=0.9,en;q=0.8",
+        "Cache-Control": "no-cache"
+      },
+      "enabled": true
+    }
+  },
+  "settings": {
+    "timeout": 10,
+    "max_retries": 3,
+    "delay_between_requests": {
+      "min": 1.0,
+      "max": 3.0
+    },
+    "price_validation": {
+      "min_price": 100.0,
+      "max_price": 2000.0,
+      "currency": "EUR"
+    },
+    "output": {
+      "data_directory": "data",
+      "json_filename": "latest_prices.json",
+      "csv_filename": "price_history.csv",
+      "log_directory": "logs"
+    },
+    "logging": {
+      "level": "INFO",
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+      "file_rotation": true,
+      "max_log_files": 10
+    }
+  }
+}
